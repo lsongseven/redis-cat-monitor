@@ -2,7 +2,7 @@ package club.tinysme.lsongseven.redis.cat.monitor;
 
 public class SetOperationsInfo {
     public static ClassMethodNameInfo getInfo() {
-        ClassMethodNameInfo classMethodNameInfo = new ClassMethodNameInfo("org/springframework/data/redis/core/DefaultSetOperations", "SET");
+        ClassMethodNameInfo classMethodNameInfo = new ClassMethodNameInfo("org/springframework/data/redis/core/DefaultSetOperations", "set");
         classMethodNameInfo.addMethodName("add");
         classMethodNameInfo.addMethodName("remove");
         classMethodNameInfo.addMethodName("pop");

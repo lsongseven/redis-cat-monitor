@@ -2,7 +2,7 @@ package club.tinysme.lsongseven.redis.cat.monitor;
 
 public class HashOperationsInfo {
     public static ClassMethodNameInfo getInfo() {
-        ClassMethodNameInfo classMethodNameInfo = new ClassMethodNameInfo("org/springframework/data/redis/core/DefaultHashOperations", "HASH");
+        ClassMethodNameInfo classMethodNameInfo = new ClassMethodNameInfo("org/springframework/data/redis/core/DefaultHashOperations", "hash");
         classMethodNameInfo.addMethodName("delete");
         classMethodNameInfo.addMethodName("hasKey");
         classMethodNameInfo.addMethodName("get");

@@ -2,7 +2,7 @@ package club.tinysme.lsongseven.redis.cat.monitor;
 
 public class ListOperationsInfo {
     public static ClassMethodNameInfo getInfo() {
-        ClassMethodNameInfo classMethodNameInfo = new ClassMethodNameInfo("org/springframework/data/redis/core/DefaultListOperations", "LIST");
+        ClassMethodNameInfo classMethodNameInfo = new ClassMethodNameInfo("org/springframework/data/redis/core/DefaultListOperations", "list");
         classMethodNameInfo.addMethodName("range");
         classMethodNameInfo.addMethodName("trim");
         classMethodNameInfo.addMethodName("size");

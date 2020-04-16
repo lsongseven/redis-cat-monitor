@@ -3,7 +3,7 @@ package club.tinysme.lsongseven.redis.cat.monitor;
 public class ValueOperationsInfo {
 
     public static ClassMethodNameInfo getInfo() {
-        ClassMethodNameInfo classMethodNameInfo = new ClassMethodNameInfo("org/springframework/data/redis/core/DefaultValueOperations", "STRING");
+        ClassMethodNameInfo classMethodNameInfo = new ClassMethodNameInfo("org/springframework/data/redis/core/DefaultValueOperations", "string");
         classMethodNameInfo.addMethodName("set");
         classMethodNameInfo.addMethodName("setIfAbsent");
         classMethodNameInfo.addMethodName("multiSet");

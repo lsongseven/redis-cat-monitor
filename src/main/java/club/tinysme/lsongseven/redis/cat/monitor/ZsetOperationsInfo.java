@@ -2,7 +2,7 @@ package club.tinysme.lsongseven.redis.cat.monitor;
 
 public class ZsetOperationsInfo {
     public static ClassMethodNameInfo getInfo() {
-        ClassMethodNameInfo classMethodNameInfo = new ClassMethodNameInfo("org/springframework/data/redis/core/DefaultZSetOperations", "ZSET");
+        ClassMethodNameInfo classMethodNameInfo = new ClassMethodNameInfo("org/springframework/data/redis/core/DefaultZSetOperations", "zset");
         classMethodNameInfo.addMethodName("add");
         classMethodNameInfo.addMethodName("remove");
         classMethodNameInfo.addMethodName("incrementScore");
