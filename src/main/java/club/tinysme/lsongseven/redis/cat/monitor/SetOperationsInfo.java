@@ -1,4 +1,4 @@
-package club.tinysme.lsongseven.agent;
+package club.tinysme.lsongseven.redis.cat.monitor;
 
 public class SetOperationsInfo {
     public static ClassMethodNameInfo getInfo() {
