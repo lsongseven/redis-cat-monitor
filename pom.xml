@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>club.tinysme.lsongseven</groupId>
-    <artifactId>agent</artifactId>
+    <artifactId>redis-cat-monitor</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
