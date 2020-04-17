@@ -30,7 +30,7 @@
 //    }
 //
 //    public void before(String data) {
-//        this.tranx = Cat.newTransaction("RedisTemplate.", this.action);
+//        this.tranx = Cat.newTransaction("RedisTemplateInfo.", this.action);
 //        this.tranx.addData("key", data);
 //    }
 //

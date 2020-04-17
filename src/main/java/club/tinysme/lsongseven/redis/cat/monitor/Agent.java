@@ -11,10 +11,8 @@ import java.lang.instrument.Instrumentation;
 import java.util.Objects;
 
 public class Agent {
-
-    static String packageName = "club.tinysme.lsongseven.hello.world";
-
     public static void premain(String agentArgs, Instrumentation inst) {
+        System.out.println("agent args: " + agentArgs);
         inst.addTransformer((classLoader, s, aClass, protectionDomain, bytes) -> {
             if (Objects.nonNull(ClassConfig.get(s))) {
                 ClassMethodNameInfo classMethodNameInfo = ClassConfig.get(s);
@@ -24,7 +22,7 @@ public class Agent {
                     ClassPool pool = new ClassPool();
                     pool.insertClassPath(new LoaderClassPath(Thread.currentThread().getContextClassLoader()));
                     pool.appendClassPath(new LoaderClassPath(classLoader));
-                    pool.importPackage(packageName);
+                    pool.importPackage(agentArgs);
                     cl = pool.makeClass(new ByteArrayInputStream(bytes));
                     CtMethod[] methods = cl.getDeclaredMethods();
                     for (int i = 0; i < methods.length; i++) {
@@ -34,7 +32,6 @@ public class Agent {
                             methods[i].addCatch("{ RedisCatMonitor.end(false); throw $e; }", etype);
                             methods[i].insertBefore(before(classMethodNameInfo.getType() + "-" + methodName));
                             methods[i].insertAfter(after());
-                            System.out.println("finish agent for: " + classMethodNameInfo.getClassName() + "-" + methodName);
                         }
                     }
                     transformed = cl.toBytecode();

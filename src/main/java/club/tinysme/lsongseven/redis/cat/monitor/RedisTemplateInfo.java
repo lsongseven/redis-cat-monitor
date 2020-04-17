@@ -1,9 +1,8 @@
 package club.tinysme.lsongseven.redis.cat.monitor;
 
-public class RedisTemplate {
+public class RedisTemplateInfo {
     public static ClassMethodNameInfo getInfo() {
-        ClassMethodNameInfo classMethodNameInfo = new ClassMethodNameInfo("org/springframework/data/redis/core/RedisTemplate;", "other");
-        classMethodNameInfo.addMethodName("execute");
+        ClassMethodNameInfo classMethodNameInfo = new ClassMethodNameInfo("org/springframework/data/redis/core/RedisTemplate", "other");
         classMethodNameInfo.addMethodName("delete");
         classMethodNameInfo.addMethodName("hasKey");
         classMethodNameInfo.addMethodName("expire");
